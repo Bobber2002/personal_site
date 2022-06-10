@@ -1,0 +1,46 @@
+.command_line {
+  display: flex;
+}
+
+.command_line pre{
+    color: rgb(175, 140, 90);
+}
+
+.command_line .command_input {
+    user-select: none;
+  color: rgb(93, 144, 127);
+}
+
+.command_line .command_input:focus {
+    user-select: none;
+  outline: none;
+  border: none;
+  /* caret-color: transparent; */
+  max-width: 120px;
+  color: rgb(93, 144, 127);
+}
+
+.command_line form {
+    font-size: 0;
+  flex-grow: 1;
+  margin-right: 6px;
+  overflow-y: hidden;
+  max-width: 100%;
+  max-height: 20px;
+}
+
+.command_line .caret {
+    /* margin-left: calc(-4 * ((12.63px + 2.5px) - 2.5px * 0.78125)); */
+    animation: blink 1s step-end infinite;
+  color: transparent;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "help" : {
+        "type" : "cmd_only",
+        "output" : "<div class=\"information\"><ul><li>------------------------------------------</li><li>help - displays this list</li><li>whois - displays information about the developer</li><li>echo - lets you send a message in the terminal</li><li>------------------------------------------</li></ul>"
+    },
+    "whois" : {
+        "type" : "cmd_only",
+        "output" : "<div class=\"information\"><ul><li>------------------------------------------</li><li><span>name</span> <span>-</span> <span>Christoffer Langkilde</span></li><li>birthdate - 2002-12-24T01:43:44+00:00</li><li>------------------------------------------</li></ul></div>"
+    },
+    "echo" :{
+        "type" : "user_dep",
+        "output" : "<span class=\"command\">%DEPENDENCY</span>"
+    }
+}
